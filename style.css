@@ -4,13 +4,22 @@ header{
    font-weight: bold;
    font-size:50px;
    text-align: center;
-   padding:25px;
 }
 
 #main{
-    width: 70%
+    width: 75%
 }
 
 #aside{
-   width:30%;
+   width:25%;
+   
 }
+
+.current{
+   border: solid 2px grey;
+   /* padding-top: 15px; */
+   margin: 50px;
+}
+/* figure out how to get everything to stay in the right spot, 
+the aside and main cannot collide"
+
