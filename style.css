@@ -6,16 +6,11 @@ header{
    text-align: center;
 }
 
-#main{
-    width: 75%
+.container{
+   padding:10px;
 }
 
-#aside{
-   width:25%;
-   
-}
-
-.current{
+#current, #five-day{
    border: solid 2px grey;
    /* padding-top: 15px; */
    margin: 50px;

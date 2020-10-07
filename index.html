@@ -6,10 +6,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--My stylesheet-->
     <link rel="stylesheet" href="style.css">
+
+    <!--Moment JS link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>    
 
     <title>Weather Dashboard</title>
 </head>
@@ -18,48 +25,49 @@
     <header>Weather Dashboard</header>
 
     <div class="container">
-        <div class="row">
-            <section id="aside">
-                <form>
-                    <div class="form-group">
-                        <label for="search">Search for a City</label>
-                        <input type="search" class="form-control" id="searchCity">
-                        <button type="button" class="btn btn-primary" id ="submit"><i class="fas fa-search"></i></button>
-                    </div>
-                 </form>
-                 <ul class="list-city">
-                    <!--searched cities will be added here-->
-                  </ul>
-            </section>
-            <section id="main">
+        <div class="clearfix">
+            <div class="col-md-3 float-left">
+                <h5>Search a City</h5>
+                <form class="form-inline">
+                    <input id="city-input" class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button id="select-city" class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+                <!--list to hold search results-->
+                <ul class="list-group" id="searchHistory">
+                </ul>
+            </div>
+
+            <div class="col-md-9 float-right">
                 <div class="main-card">
-                    <div class="card-body current">
-                        <!--divs to hold the results from the current URL-->
-                       <div class="city"> TEST</div>
-                       <div class="temp"> TEST TEST</div>
-                       <div class="humidity">TEST TEST TEST</div>
-                       <div class="wind">TEST </div>
-                       <div class="uv">TEST</div>
+                    <!--hold the results from the current URL-->
+                    <div class="card-body" id="current">
+                        <div class="uv">
+                        </div>
                     </div>
                 </div>
+                <br>
 
-            </section>
+                <div class="row" id="five-day">
+                  <!--5 day forecast results load here-->>
+                </div>
+            </div>
         </div>
     </div>
 
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+
+    <!--link to my javascript--> 
+    <script src ="script.js"></script>   
 </body>
 
 </html>
