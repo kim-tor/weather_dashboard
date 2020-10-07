@@ -1,4 +1,9 @@
 # weather_dashboard
+[Weather Dashboard]
+========================
+
+![Image of Weather Dashboard](weather.png)
+
 
 # Description
 
@@ -17,6 +22,9 @@ I was unsure of how to display the weather icons. I saw that they were part of t
 I also had an issue with generating my list of searches. Upon reloading the page my last search was the only one that came up. 
 I tried creating an array to hold all the searches and then thought that they would all load however that was not the case. 
 I also couldn't get my icon to work for the search button. I feel like I had a lot of little nuances that I struggled to figure out.
+
+An issue that I noticed happening randomly is that some times I would get a fail to load error, that really confused me. I think
+it might have something to do with the api call issues I had with the CORS.
 
 # Credits
 One of the memebers for my group project (Anna C) helped us (our group) with how to get started with grabbing the UV index. 
