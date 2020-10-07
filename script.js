@@ -96,7 +96,8 @@ function citySearch(city) {
             // variables to hold data
             var date = results[i].dt_txt;
             var shortDate = date.substr(0, 10);
-            var temp = results[i].main.temp;
+            var tempF1 = (results[i].main.temp - 273.15) * 1.80 + 32;
+            // var temp = results[i].main.temp;
             var humidity = results[i].main.humidity;
 
             // console.log(shortDate);
@@ -106,7 +107,7 @@ function citySearch(city) {
             // create elements for html
             var dateLabel = $("<h5 class ='card-title'>").text(shortDate);
 
-            var tempLabel = $("<p class ='card-text'>").text("Temperature: " + temp);
+            var tempLabel = $("<p class ='card-text'>").text("Temperature: " + tempF1.toFixed(2));
             var humidtyLabel = $("<p class ='card-text'>").text("Humidity: " + humidity);
 
 
