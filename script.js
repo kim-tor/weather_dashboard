@@ -91,7 +91,7 @@ function citySearch(city) {
 
         // create a for loop to iterate through the 5 day responses, creating a div and individual variables for each element
         for (var i = 0; i < results.length; i += 8) {
-            var fiveDiv = $("<div>");
+            var fiveDiv = $("<div class='card shadow-lg'>");
 
             // variables to hold data
             var date = results[i].dt_txt;
@@ -104,10 +104,10 @@ function citySearch(city) {
             // console.log(humidity);
 
             // create elements for html
-            var dateLabel = $("<h5>").text(shortDate);
+            var dateLabel = $("<h5 class ='card-title'>").text(shortDate);
 
-            var tempLabel = $("<p>").text("Temperature: " + temp);
-            var humidtyLabel = $("<p>").text("Humidity: " + humidity);
+            var tempLabel = $("<p class ='card-text'>").text("Temperature: " + temp);
+            var humidtyLabel = $("<p class ='card-text'>").text("Humidity: " + humidity);
 
 
             fiveDiv.append(dateLabel);

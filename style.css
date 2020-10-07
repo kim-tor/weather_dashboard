@@ -6,6 +6,13 @@ header{
    text-align: center;
 }
 
+.card{
+   background-color:darkslategray;
+   color: white;
+   padding: 10px;
+   margin: auto;
+}
+
 .container{
    padding:10px;
 }
