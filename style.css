@@ -10,11 +10,10 @@ header{
    padding:10px;
 }
 
-#current, #five-day{
+.main-card, #five-day{
    border: solid 2px grey;
    /* padding-top: 15px; */
    margin: 50px;
 }
-/* figure out how to get everything to stay in the right spot, 
-the aside and main cannot collide"
+
 
