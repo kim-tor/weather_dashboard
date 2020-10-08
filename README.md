@@ -1,5 +1,5 @@
 # weather_dashboard
-[Weather Dashboard]
+[Weather Dashboard](https://kim-tor.github.io/weather_dashboard/)
 ========================
 
 ![Image of Weather Dashboard](weather.png)
